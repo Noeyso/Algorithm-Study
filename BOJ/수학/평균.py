@@ -1,3 +1,5 @@
+## 백준_1546
+
 N = int(input())
 
 score=list(map(int,input().split()))
