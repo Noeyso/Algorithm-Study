@@ -21,7 +21,7 @@ def dfs(y,x):
             move_y,move_x = y+move[0],x+move[1]
 
             if 0<=move_y<N and 0<=move_x<M and ground[move_y][move_x]==1:
-                queue.append((mo ve_y,move_x))
+                queue.append((move_y,move_x))
                 ground[move_y][move_x]=0
 
 
