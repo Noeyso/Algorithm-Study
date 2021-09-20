@@ -1,3 +1,8 @@
+##백준_15486
+
+from sys import stdin
+input = stdin.readline
+
 N=int(input())
 
 T,P=[],[]
@@ -8,12 +13,11 @@ for i in range(N):
     T.append(t)
     P.append(p)
 
+m = 0
 for i in range(N):
+    m=max(m,dp[i])
     if T[i]<=N-i:
-        dp[i+T[i]] = max(dp[i+T[i]],dp[i]+P[i])
-    dp[i+1]=max(dp[i+1],dp[i])
-    print(dp)
+        dp[i+T[i]] = max(dp[i+T[i]],m+P[i])
 
 
-print(dp[N])
-
+print(max(dp))
