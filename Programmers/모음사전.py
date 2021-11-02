@@ -8,3 +8,18 @@ def solution(word):
     words.sort()
             
     return words.index(word)+1
+
+"""
+def solution(word):
+   alpha=['A','E','I','O','U']
+   alpha_set = set(alpha)
+
+   for _ in range(4):
+       temp=[]
+       for s in alpha_set:
+           for a in alpha:
+               temp.append(s+a)
+       alpha_set.update(temp)
+       print(alpha_set)
+   return sorted(list(alpha_set)).index(word)+1
+"""
