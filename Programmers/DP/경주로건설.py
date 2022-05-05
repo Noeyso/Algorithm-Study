@@ -25,7 +25,7 @@ def solution(board):
             else:
                 cost+=600
             
-            if visited[ny][nx]!=-1 and visited[ny][nx]<cost:
+            if visited[ny][nx]!=-1 and visited[ny][nx]<cost-400:
                 continue
             que.append((ny,nx,drt,cost))
             visited[ny][nx]=cost
